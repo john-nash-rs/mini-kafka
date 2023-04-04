@@ -8,4 +8,9 @@ Let's make a mini kafka. Please follow the steps below and you should be able to
 
 Start a TCP server. Send and receive "Hello world".
 
-Look at class Applica
+Look at class [ Application ](https://github.com/john-nash-rs/mini-kafka/blob/main/src/main/java/server/Application.java) 
+
+More resource to create [TCP server](https://www.baeldung.com/a-guide-to-java-sockets)
+
+Please make sure that your code can handle multiple TCP connection at once. 
+
