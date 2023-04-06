@@ -25,6 +25,6 @@ Operation is create topic. And argument is parition and replica.
 
 ### Step 3
 
-Added Factory Method for Commands. Given the command, we get the class tha executes the operation for the given command.
+Added [Factory Method](https://github.com/john-nash-rs/mini-kafka/blob/main/src/main/java/server/commands/CommandFactory.java) for Commands. Given the command, we get the class tha executes the operation for the given command.
 
 Do read about factory design pattern. 
