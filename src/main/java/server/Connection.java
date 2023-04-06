@@ -1,5 +1,7 @@
 package server;
 
+import server.commands.Context;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -20,11 +22,10 @@ public class Connection implements Runnable {
             PrintStream printStream = new PrintStream(this.socket.getOutputStream());
             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             String resp = in.readLine();
-            Thread.sleep(5000);
             System.out.println("Message recieved :: "+resp);
-            for (int i = 100; i >= 0; i--) {
-                printStream.println(i + " bottles of beer on the wall "+resp);
-            }
+            Context context = new Context(resp);
+            printStream.println(context.getOperation()+" "+resp+" "+context.getArgs());
+
             printStream.close();
             this.socket.close();
         } catch (Exception e) {
