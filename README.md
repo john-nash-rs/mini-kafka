@@ -14,3 +14,11 @@ More resource to create [TCP server](https://www.baeldung.com/a-guide-to-java-so
 
 Please make sure that your code can handle multiple TCP connection at once. 
 
+### Step 2
+
+Add Context class.
+This class parses instructions and stores operationa and args in context class.
+
+Example: create topic --partition=2 --replica=2
+
+Operation is create topic. And argument is parition and replica. 
