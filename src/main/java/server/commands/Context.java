@@ -6,8 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.HashMap;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Map;
 
 @AllArgsConstructor
@@ -18,7 +16,7 @@ import java.util.Map;
  * create topic --partition=2 --replica=2
  */
 public class Context {
-    private String operation;
+    private String command;
     private Map<String, String> args;
 
     public Context(String expression){
@@ -42,11 +40,11 @@ public class Context {
 
     private boolean setCommandContext(StringBuilder builder, boolean isOp) {
         if(isOp){
-            operation = builder.toString();
+            command = builder.toString().toUpperCase();
             isOp = false;
         } else {
             String[] argAndValue = builder.toString().split("=");
-            args.put(argAndValue[0], argAndValue[1]);
+            args.put(argAndValue[0].toUpperCase(), argAndValue[1].toUpperCase());
         }
         builder.setLength(0);
         return isOp;

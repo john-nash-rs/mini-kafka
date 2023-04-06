@@ -1,12 +1,12 @@
 package server;
 
+import server.commands.Command;
+import server.commands.CommandFactory;
 import server.commands.Context;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
-import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Connection implements Runnable {
@@ -24,7 +24,8 @@ public class Connection implements Runnable {
             String resp = in.readLine();
             System.out.println("Message recieved :: "+resp);
             Context context = new Context(resp);
-            printStream.println(context.getOperation()+" "+resp+" "+context.getArgs());
+            Command command = CommandFactory.get(context);
+            printStream.println(context.getCommand()+" "+resp+" "+context.getArgs());
 
             printStream.close();
             this.socket.close();

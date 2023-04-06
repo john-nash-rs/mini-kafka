@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae10e1e-e470-4086-8ebb-32dd7848ea48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/Context.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/Topic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/server/commands/CommandFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Context.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +52,11 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="server.commands" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
