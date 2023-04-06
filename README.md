@@ -16,7 +16,7 @@ Please make sure that your code can handle multiple TCP connection at once.
 
 ### Step 2
 
-Add Context class.
+Add [Context](https://github.com/john-nash-rs/mini-kafka/blob/main/src/main/java/server/commands/Context.java) class.
 This class parses instructions and stores operationa and args in context class.
 
 Example: create topic --partition=2 --replica=2
