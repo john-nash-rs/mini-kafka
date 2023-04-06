@@ -16,10 +16,15 @@ Please make sure that your code can handle multiple TCP connection at once.
 
 ### Step 2
 
-Add Context class.
+Add [Context](https://github.com/john-nash-rs/mini-kafka/blob/main/src/main/java/server/commands/Context.java) class.
 This class parses instructions and stores operationa and args in context class.
 
 Example: create topic --partition=2 --replica=2
 
 Operation is create topic. And argument is parition and replica. 
 
+### Step 3
+
+Added Factory Method for Commands. Given the command, we get the class tha executes the operation for the given command.
+
+Do read about factory design pattern. 
