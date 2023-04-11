@@ -2,7 +2,7 @@
 
 ## How to learn about kafka internals?
 
-Let's make a mini kafka. Please follow the steps below and you should be able to many of the kafka  concepts.
+Let's make a mini kafka. Please follow the steps below, and you should be able to many of the kafka  concepts.
 
 ### Step 1
 
@@ -21,7 +21,7 @@ This class parses instructions and stores operation and args in context class.
 
 Example: create topic --partition=2 --replica=2
 
-Operation is create topic. And argument is parition and replica. 
+Operation is "create topic". And argument is partition and replica. 
 
 ### Step 3
 

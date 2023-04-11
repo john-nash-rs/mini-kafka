@@ -12,18 +12,15 @@ import java.util.Map;
 @NoArgsConstructor
 @Getter
 @Setter
-/**
- * create topic --partition=2 --replica=2
- */
 public class Context {
     private String command;
+    private String value;
     private Map<String, String> args;
 
     public Context(String expression){
-        args= new HashMap<String, String>();
+        args= new HashMap<>();
         char[] arr = expression.toCharArray();
 
-        //List<Character> param = new ArrayList<Character>();
         StringBuilder builder = new StringBuilder();
 
         boolean isOp = true;
@@ -39,14 +36,16 @@ public class Context {
     }
 
     private boolean setCommandContext(StringBuilder builder, boolean isOp) {
+        String[] argAndValue = builder.toString().split("=");
         if(isOp){
-            command = builder.toString().toUpperCase();
+            command = argAndValue[0].toUpperCase();
+            value = argAndValue[1].toUpperCase();
             isOp = false;
         } else {
-            String[] argAndValue = builder.toString().split("=");
             args.put(argAndValue[0].toUpperCase(), argAndValue[1].toUpperCase());
         }
         builder.setLength(0);
+        //noinspection ConstantValue
         return isOp;
     }
 }

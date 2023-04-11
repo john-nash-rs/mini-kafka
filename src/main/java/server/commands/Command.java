@@ -1,5 +1,5 @@
 package server.commands;
 
 public interface Command {
-    public void execute(Context context);
+    void execute(Context context);
 }

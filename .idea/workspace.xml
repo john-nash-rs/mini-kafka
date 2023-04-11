@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dae10e1e-e470-4086-8ebb-32dd7848ea48" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/CommandFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Context.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/CreateTopic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/CreateTopic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +57,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
@@ -55,6 +65,23 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="server.commands" />
     </key>
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="server.commands.Constants" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="mini_kafka" type="Application" factoryName="Application">
+      <envs>
+        <env name="-Dlog4j.configurationFile" value="file:$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <env name="Dlog4j.configuration" value="file:$PROJECT_DIR$/src/main/resources/log4j.properties" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="server.Application" />
+      <module name="mini-kafka" />
+      <option name="PROGRAM_PARAMETERS" value="-Dlog4j.configurationFile=file:$PROJECT_DIR$/src/main/resources/log4j.properties -Dlog4j.configuration=file:$PROJECT_DIR$/src/main/resources/log4j.properties -Dlog4j.debug" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,5 +93,21 @@
       <updated>1679940584821</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/commands/CreateTopic.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/commands/CreateTopic.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
