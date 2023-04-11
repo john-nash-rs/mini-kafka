@@ -8,7 +8,6 @@ public class CommandFactory {
         System.out.println(Constants.Commands.valueOf(context.getCommand()));
         switch (Constants.Commands.valueOf(context.getCommand())){
             case CREATE_TOPIC:
-                System.out.println("Give me create topic factory");
                 return new CreateTopic();
         }
         return null;

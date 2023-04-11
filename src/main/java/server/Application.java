@@ -1,13 +1,19 @@
 package server;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import server.commands.CreateTopic;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
 public class Application {
+
+    private static final Logger logger = LogManager.getLogger(Application.class);
     private ServerSocket serverSocket;
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello World");
+        logger.info("Hello World");
         Application application = new Application();
         application.startTcpServer();
 

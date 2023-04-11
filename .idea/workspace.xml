@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dae10e1e-e470-4086-8ebb-32dd7848ea48" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Connection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/CommandFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/CommandFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/commands/CreateTopic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/commands/CreateTopic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
