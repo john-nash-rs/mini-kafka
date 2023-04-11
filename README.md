@@ -31,6 +31,6 @@ Do read about factory design pattern.
 
 ### Step 4
 
-Make an interface for Command. It should have a method called execute. CreateTopic class in concrete 
+Make an interface for [Command](https://github.com/john-nash-rs/mini-kafka/blob/main/src/main/java/server/commands/Command.java). It should have a method called execute. [CreateTopic](https://github.com/john-nash-rs/mini-kafka/blob/main/src/main/java/server/commands/CreateTopic.java) class in concrete 
 implementation of Command. CreateTopic class will execute create topic related operation. 
 
