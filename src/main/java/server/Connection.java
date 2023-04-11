@@ -25,6 +25,7 @@ public class Connection implements Runnable {
             System.out.println("Message recieved :: "+resp);
             Context context = new Context(resp);
             Command command = CommandFactory.get(context);
+            command.execute(context);
             printStream.println(context.getCommand()+" "+resp+" "+context.getArgs());
 
             printStream.close();
